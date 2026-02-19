@@ -1,0 +1,32 @@
+{
+  "id": "quantum-coin-flipping",
+  "name": "Quantum Coin Flipping Protocol",
+  "category": "cryptography",
+  "description": "Fair coin flipping over a quantum channel: Alice and Bob each contribute randomness via entanglement.",
+  "long_description": "Quantum coin flipping uses entanglement to achieve a fair coin flip between two mutually distrustful parties. Unlike classical coin flipping, neither party can bias the outcome without being detected. A Bell pair is shared; each party applies a random local operation, then both measure. The XOR of their results is the coin. Full security requires a more complex protocol; this circuit demonstrates the core idea.",
+  "difficulty": "intermediate",
+  "qubit_count": 2,
+  "clbit_count": 2,
+  "gate_count": 5,
+  "depth": 4,
+  "tags": [
+    "coin-flipping",
+    "cryptography",
+    "fairness",
+    "entanglement"
+  ],
+  "circuit_formats": [
+    "qasm2"
+  ],
+  "source_file": "circuit.qasm",
+  "expected_output": "50% each: c[0]=c[1]=0 or c[0]=c[1]=1 (fair coin; XOR=0 always for Bell state)",
+  "references": [
+    {
+      "title": "Mochon, C. (2007). Quantum Weak Coin Flipping with Arbitrarily Small Bias. arXiv:0711.4114",
+      "url": "https://arxiv.org/abs/0711.4114"
+    }
+  ],
+  "author": "OpenQC Community",
+  "license": "MIT",
+  "version": "1.0.0"
+}
