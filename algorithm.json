@@ -1,0 +1,28 @@
+{
+  "slug": "quantum-coin-flip",
+  "name": "Quantum Coin Flipping",
+  "version": "1.0.0",
+  "author": "iniestarchen",
+  "license": "Apache-2.0",
+  "description": "Fair coin flipping over a quantum channel: Alice and Bob each contribute randomness via entanglement.",
+  "industries": [
+    "cryptography"
+  ],
+  "techniques": [
+    "gate"
+  ],
+  "difficulty": "intermediate",
+  "computation_model": "gate",
+  "algorithm_type": "circuit",
+  "qubit_count": 2,
+  "tags": [
+    "coin-flipping",
+    "protocol",
+    "fairness"
+  ],
+  "access": "open",
+  "source": "official",
+  "metadata": {
+    "year_introduced": 1984
+  }
+}
